@@ -1,0 +1,24 @@
+[2026-09-18T21:05:17Z] === ENRICH ITERATION 1 START | repo=bigcat88/pillow_heif sha=57206470 ===
+[2026-09-18T21:05:17Z] [iter=1] PHASE START: enrich repo=bigcat88/pillow_heif sha=57206470 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/57206470-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/572064700e606d5a124386072e7a348b86490d19.nq.gz
+[2026-09-18T21:05:17Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-18T21:05:21Z] [iter=1] AST store loaded triples=440340 load_secs=4 mem_mb=651 MB
+[2026-09-18T21:05:21Z] [iter=1] Step 2: Finding LSP targets mem_mb=651 MB
+[2026-09-18T21:05:21Z] [iter=1] LSP targets found call_sites=3168 imports=137 extends=9 implements=0 secs=0
+[2026-09-18T21:05:22Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=651 MB
+[2026-09-18T21:05:24Z] [iter=1] Position index built positions=29863 nodes_with_types=37889 secs=2 mem_mb=651 MB
+[2026-09-18T21:05:24Z] [iter=1] Step 3: Starting LSP resolution mem_mb=651 MB already_completed_types=[] already_completed_files=0
+[2026-09-18T21:05:24Z] [iter=1] Resolving target type target_type=call_site count=3168
+[2026-09-18T21:06:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=1 resolved=173 errors=197 current=setup.py
+[2026-09-18T21:06:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=5 resolved=411 errors=335 current=examples/heif_remove_image.py
+[2026-09-18T21:07:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=11 resolved=792 errors=479 current=tests/opencv_test.py
+[2026-09-18T21:07:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=18 resolved=1063 errors=668 current=examples/pillow_create_sequence.py
+[2026-09-18T21:08:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.0 files_done=28 resolved=1287 errors=831 current=pillow_heif/_lib_info.py
+[2026-09-18T21:08:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=41 resolved=1405 errors=1048 current=libheif/heif.h
+[2026-09-18T21:09:13Z] [iter=1] Target type resolved target_type=call_site resolved=1407 errors=4272 secs=230 mem_mb=651 MB
+[2026-09-18T21:09:13Z] [iter=1] Resolving target type target_type=import_statement count=137
+[2026-09-18T21:09:15Z] [iter=1] Target type resolved target_type=import_statement resolved=122 errors=0 secs=2 mem_mb=651 MB
+[2026-09-18T21:09:15Z] [iter=1] Resolving target type target_type=extends_clause count=9
+[2026-09-18T21:09:16Z] [iter=1] Target type resolved target_type=extends_clause resolved=9 errors=0 secs=1 mem_mb=651 MB
+[2026-09-18T21:09:22Z] [iter=1] Step 5: Writing final enrichment file triples=24952
+[2026-09-18T21:09:22Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/572064700e606d5a124386072e7a348b86490d19.nq.gz size_kb=454
+[2026-09-18T21:09:22Z] [iter=1] PHASE END: enrich elapsed_s=246 elapsed_min=4.1 total_triples=24952
