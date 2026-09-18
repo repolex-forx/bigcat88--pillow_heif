@@ -1,0 +1,23 @@
+[2026-09-18T09:07:51Z] === ENRICH ITERATION 1 START | repo=bigcat88/pillow_heif sha=1d12ae3d ===
+[2026-09-18T09:07:51Z] [iter=1] PHASE START: enrich repo=bigcat88/pillow_heif sha=1d12ae3d runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/1d12ae3d-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/1d12ae3dbb8aae87b9b7016df7220877a30d039a.nq.gz
+[2026-09-18T09:07:51Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-18T09:08:02Z] [iter=1] AST store loaded triples=439989 load_secs=11 mem_mb=650 MB
+[2026-09-18T09:08:02Z] [iter=1] Step 2: Finding LSP targets mem_mb=650 MB
+[2026-09-18T09:08:02Z] [iter=1] LSP targets found call_sites=3157 imports=194 extends=12 implements=0 secs=0
+[2026-09-18T09:08:02Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=650 MB
+[2026-09-18T09:08:04Z] [iter=1] Position index built positions=29859 nodes_with_types=37856 secs=1 mem_mb=650 MB
+[2026-09-18T09:08:04Z] [iter=1] Step 3: Starting LSP resolution mem_mb=650 MB already_completed_types=[] already_completed_files=0
+[2026-09-18T09:08:04Z] [iter=1] Resolving target type target_type=call_site count=3157
+[2026-09-18T09:08:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=5 resolved=289 errors=98 current=examples/pillow_save.py
+[2026-09-18T09:08:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=10 resolved=649 errors=418 current=tests/leaks_test.py
+[2026-09-18T09:09:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.6 files_done=16 resolved=968 errors=662 current=pillow_heif/as_plugin.py
+[2026-09-18T09:09:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.1 files_done=30 resolved=1294 errors=949 current=tests/dataset.py
+[2026-09-18T09:10:33Z] [iter=1] Target type resolved target_type=call_site resolved=1366 errors=1195 secs=149 mem_mb=650 MB
+[2026-09-18T09:10:33Z] [iter=1] Resolving target type target_type=import_statement count=194
+[2026-09-18T09:10:33Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=2.7 files_done=0 resolved=0 errors=0 current=tests/leaks_test.py
+[2026-09-18T09:10:35Z] [iter=1] Target type resolved target_type=import_statement resolved=174 errors=0 secs=2 mem_mb=650 MB
+[2026-09-18T09:10:35Z] [iter=1] Resolving target type target_type=extends_clause count=12
+[2026-09-18T09:10:36Z] [iter=1] Target type resolved target_type=extends_clause resolved=12 errors=0 secs=1 mem_mb=650 MB
+[2026-09-18T09:10:40Z] [iter=1] Step 5: Writing final enrichment file triples=25218
+[2026-09-18T09:10:40Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/1d12ae3dbb8aae87b9b7016df7220877a30d039a.nq.gz size_kb=459
+[2026-09-18T09:10:40Z] [iter=1] PHASE END: enrich elapsed_s=169 elapsed_min=2.8 total_triples=25218
