@@ -1,0 +1,21 @@
+[2026-09-19T15:17:53Z] === ENRICH ITERATION 1 START | repo=bigcat88/pillow_heif sha=baa6badb ===
+[2026-09-19T15:17:53Z] [iter=1] PHASE START: enrich repo=bigcat88/pillow_heif sha=baa6badb runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/baa6badb-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/baa6badb22fe23737d1c939f528b792334e13bf2.nq.gz
+[2026-09-19T15:17:53Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-19T15:17:58Z] [iter=1] AST store loaded triples=349318 load_secs=5 mem_mb=565 MB
+[2026-09-19T15:17:58Z] [iter=1] Step 2: Finding LSP targets mem_mb=565 MB
+[2026-09-19T15:17:58Z] [iter=1] LSP targets found call_sites=2858 imports=11 extends=0 implements=0 secs=0
+[2026-09-19T15:17:58Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=565 MB
+[2026-09-19T15:18:00Z] [iter=1] Position index built positions=23401 nodes_with_types=30233 secs=2 mem_mb=565 MB
+[2026-09-19T15:18:00Z] [iter=1] Step 3: Starting LSP resolution mem_mb=565 MB already_completed_types=[] already_completed_files=0
+[2026-09-19T15:18:00Z] [iter=1] Resolving target type target_type=call_site count=2858
+[2026-09-19T15:18:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=3 resolved=190 errors=131 current=tests/orientation_test.py
+[2026-09-19T15:19:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=9 resolved=594 errors=292 current=tests/opencv_test.py
+[2026-09-19T15:19:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.8 files_done=14 resolved=826 errors=534 current=pillow_heif/misc.py
+[2026-09-19T15:20:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=28 resolved=1171 errors=748 current=libheif/build.py
+[2026-09-19T15:20:48Z] [iter=1] Target type resolved target_type=call_site resolved=1379 errors=3715 secs=168 mem_mb=565 MB
+[2026-09-19T15:20:48Z] [iter=1] Resolving target type target_type=import_statement count=11
+[2026-09-19T15:20:48Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=2.9 files_done=0 resolved=0 errors=0 current=examples/pillow_save.py
+[2026-09-19T15:20:49Z] [iter=1] Target type resolved target_type=import_statement resolved=11 errors=0 secs=1 mem_mb=565 MB
+[2026-09-19T15:20:56Z] [iter=1] Step 5: Writing final enrichment file triples=22001
+[2026-09-19T15:20:56Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/baa6badb22fe23737d1c939f528b792334e13bf2.nq.gz size_kb=397
+[2026-09-19T15:20:56Z] [iter=1] PHASE END: enrich elapsed_s=184 elapsed_min=3.1 total_triples=22001
