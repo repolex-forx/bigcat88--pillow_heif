@@ -90,6 +90,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 6bffca6bada2e071418a9092e7958bcecf4652c1
 │   │   │   └── chunk-001.nq.gz
+│   │   ├── 6dfa3a81440bda96a2508565330c7f2e1199e95d
+│   │   │   └── chunk-001.nq.gz
 │   │   ├── 6edb6d0537b3cf6dc029b28ac92850561ed9aba4
 │   │   │   └── chunk-001.nq.gz
 │   │   ├── 7150375b8e09b1cfb70fd3ec18c77c227140f019
@@ -167,6 +169,7 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │   │   ├── 61f7258ddfb038772abdf195ccddfa04f624f1b9.nq.gz
 │   │   ├── 67b924ad80b2acc653615048c4419c1548ef9a25.nq.gz
 │   │   ├── 6bffca6bada2e071418a9092e7958bcecf4652c1.nq.gz
+│   │   ├── 6dfa3a81440bda96a2508565330c7f2e1199e95d.nq.gz
 │   │   ├── 6edb6d0537b3cf6dc029b28ac92850561ed9aba4.nq.gz
 │   │   ├── 7150375b8e09b1cfb70fd3ec18c77c227140f019.nq.gz
 │   │   ├── 7aabeb2aa2c3ad67ffcbdd21d10134afd1ba02b7.nq.gz
@@ -244,6 +247,8 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 │       ├── 67b924ad80b2acc653615048c4419c1548ef9a25
 │       │   └── chunk-001.nq.gz
 │       ├── 6bffca6bada2e071418a9092e7958bcecf4652c1
+│       │   └── chunk-001.nq.gz
+│       ├── 6dfa3a81440bda96a2508565330c7f2e1199e95d
 │       │   └── chunk-001.nq.gz
 │       ├── 6edb6d0537b3cf6dc029b28ac92850561ed9aba4
 │       │   └── chunk-001.nq.gz
@@ -339,12 +344,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 04c7f7f8b48eb320708c24040f4cef566b2b7dbc.nq.gz
     ├── 04d31675759ffffe9eed08a5a07212419b5f5c73.nq.gz
     ├── 04d460ca7f237213b10212f775878d760ea45771.nq.gz
-    ├── 04edd7b16b980c5f0111fa64a18423c33feb27a2.nq.gz
-    ├── 0528849e4efe3bf971cebbed23d6503adf7680d1.nq.gz
-    ├── 054caed2e8a4c1e39683f6c008038891ad07f407.nq.gz
-    └── 05631c074666eb746520eb7fb308bd5a65acf7e3.nq.gz
+    └── 04edd7b16b980c5f0111fa64a18423c33feb27a2.nq.gz
 
-108 directories, 200 files
+110 directories, 200 files
 ```
 
 | Directory | What it contains |
